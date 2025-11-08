@@ -1,21 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
-
+$primary-color: hsl(218, 44%, 22%);
+$secondary-color: hsl(216, 15%, 48%);
+$background-color:  hsl(212, 45%, 89%);
+$body-color: white;
 
 *{
-    font-size: 15px;
-    margin: 0px;
-    padding: 0px;
+    font-size: 0.9375rem;
+    margin: 0;
+    padding: 0;
     font-family: "Roboto Condensed", sans-serif;
 }
 
 
 body{
-    background-color: hsl(212, 45%, 89%)
+    background-color: $background-color;
 }
 
 main{
     width: 300px;
-    background-color: white;
+    background-color: $body-color;
     height: 450px;
     position: absolute;
     top: 0;
@@ -24,9 +27,9 @@ main{
     right: 0;
     border-radius: 16px;
     margin: auto;
-    .qrcode{
+    figure{
         margin: 25px;
-        margin-bottom: 15px;
+        margin-block-end: 15px;
         img{
             width: 250px;
             height: 250px;
@@ -36,9 +39,9 @@ main{
 
     h1{
         text-align: center;
-        font-size: 21px;
+        font-size: 1.3125rem;
         font-weight: 700;
-        color: hsl(218, 44%, 22%);
+        color: $primary-color;
         width: 240px;
         margin: 0px auto;
     }
@@ -47,8 +50,10 @@ main{
         text-align: center;
         width: 240px;
         margin: 0px auto;
-        color: hsl(216, 15%, 48%);
-        margin-top: 10px;
+        color: $secondary-color;
+        margin-block-start: 10px;
     }
 
+
+    
 }
